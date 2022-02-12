@@ -7,4 +7,4 @@ all:
 clean:
 	rm -rf ~/wine-dirs
 	sudo rm -rf /srv/chroot/ubuntu_i386
-	sudo rm /etc/schroot/chroot.d/ubuntu_i386.conf
+	sudo rm -f /etc/schroot/chroot.d/ubuntu_i386.conf
