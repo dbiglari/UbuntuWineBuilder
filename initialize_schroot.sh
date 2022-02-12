@@ -8,3 +8,6 @@ sudo schroot -c ubuntu_i386 -u root $HOME/wine-dirs/schroot_setup_32bit_build_en
 
 sudo cp services /srv/chroot/ubuntu_i386/etc
 sudo cp protocols /srv/chroot/ubuntu_i386/etc
+
+sudo chmod root:root /srv/chroot/ubuntu_i386/etc/services
+sudo chmod root:root /srv/chroot/ubuntu_i386/etc/protocols
