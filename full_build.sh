@@ -14,14 +14,5 @@ sudo ~/wine-dirs/create_chroot.sh $(whoami)
 # pull the wine repo
 ~/wine-dirs/wine_pull_repo.sh
 
-# build 64bit wine for the --with-wine64 reference
-~/wine-dirs/wine64_build.sh
-
-# prebuild the 32bit wine outside the chroot for the --with-wine-tools reference
-~/wine-dirs/wine32_prebuild.sh
-
-# build the 32bit wine32 inside the chroot and install
-schroot -c ubuntu_i386 -u $(whoami) ~/wine-dirs/schroot_wine32_build.sh
-
-# build the 64bit wine outside the chroot and install
-~/wine-dirs/wine64_finalbuild.sh
+# do a clean build
+~/wine-dirs/build.sh clean
