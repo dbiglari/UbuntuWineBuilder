@@ -12,5 +12,6 @@ sudo apt-get -y install gcc make perl
 sudo apt-get -y install libxext-dev
 sudo apt-get -y install gcc-multilib g++-multilib
 sudo apt-get -y install mingw-w64-x86-64-dev mingw-w64-i686-dev mingw-w64-tools mingw-w64-common mingw-w64
+sudo apt-get -y install libx11-6 libxext6 libx11-6:i386 libxext6:i386
 sudo apt-get -y build-dep wine
 
