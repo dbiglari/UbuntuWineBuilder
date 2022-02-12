@@ -4,9 +4,9 @@
 sudo ~/wine-dirs/update_sources.sh
 
 # install ubuntu 20.04 non-chroot wine build dependancy packages
-sudo ~/wine-dirs/install_deps.sh $whoami
+sudo ~/wine-dirs/install_deps.sh
 
-sudo ~/wine-dirs/create_chroot.sh
+sudo ~/wine-dirs/create_chroot.sh $whoami
 
 # initialize 32bit chroot to build wine build dependancy packages
 ~/wine-dirs/initialize_schroot.sh
